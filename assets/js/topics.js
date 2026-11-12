@@ -1,0 +1,71 @@
+const sources = {
+  water: { title: 'Cornell Feline Health Center｜Hydration', url: 'https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/hydration' },
+  environment: { title: 'AAFP／ISFM｜Feline Environmental Needs Guidelines', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11383066/' },
+  nutrition: { title: 'Cornell Feline Health Center｜Feeding Your Cat', url: 'https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat' },
+  thirst: { title: 'PDSA｜Is my cat drinking and weeing too much?', url: 'https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/symptoms/is-my-cat-drinking-and-weeing-too-much' },
+  health: { title: 'VCA Animal Hospitals｜Recognizing the Signs of Illness in Cats', url: 'https://vcahospitals.com/westcreek/know-your-pet/recognizing-signs-of-illness-in-cats' },
+  yolo: { title: 'Ultralytics｜YOLOv8 官方文件', url: 'https://docs.ultralytics.com/models/yolov8/' },
+  petface: { title: 'PetFace｜ECCV 2024 研究專案', url: 'https://dahlian00.github.io/PetFacePage/' },
+  petcode: { title: 'PetFace｜官方實作與研究用途限制', url: 'https://github.com/mapooon/PetFace' },
+};
+
+export const topics = {
+  water: {
+    id: 'water', navTitle: '飲水科學', title: '每一次靠近水碗，\n都有牠的理由。', englishTitle: 'The science of water.', eyebrow: '01 / WATER & EVERYDAY LIFE',
+    intro: '水碗裡的變化，只是故事的一部分。把食物、空間與個別習慣放在一起，才更接近牠真實的日常。', href: 'water.html', updatedAt: '2026-11-12',
+    image: { src: 'assets/images/cat-portrait.jpg', alt: '黑白貓趴在木欄上，注視前方' },
+    sections: [
+      { id: 'water-sources', kicker: 'LOOK BEYOND THE BOWL', title: '水分來源，不只有水碗。', paragraphs: ['食物中的水分也屬於攝取的一部分。乾糧與濕食的含水量不同，所以換食後，看見的喝水行為也可能改變；不能只用喝水次數推算整體水分狀態。', '先整理食物名稱、飲食變動與平時使用的飲水位置，再觀察相對於牠自己的日常有什麼不同。不同貓咪之間的數字，不適合直接當成健康評分。'], points: ['一起記錄飲食的改變', '保留新鮮、容易取得的水', '不從單一水碗判斷健康'] },
+      { id: 'water-access', kicker: 'ACCESS BEFORE NUMBERS', title: '放得到，也要喝得到。', paragraphs: ['AAFP／ISFM 指引建議分散重要資源，將食物與飲水分開安排。多貓家庭中，集中擺放的水碗可能共享同一條通路；碗多不代表每隻貓都有自在的選擇。', '試著從貓的高度看空間：門是否會關上？是否必須經過另一隻貓才能接近？記下等待與繞路，比只計算水碗數量更能描述使用情況。'], points: ['分散位置與接近路線', '觀察每隻貓的使用情況', '調整後持續回看'] },
+      { id: 'water-observation', kicker: 'NOTICE THE DIFFERENCE', title: '建立基準，讀懂改變。', paragraphs: ['可把日期、食物、看見的飲水行為與貓砂盆變化放在同一張筆記。共用水碗、打翻與蒸發，都可能使水量差異無法對應到單一個體。', '飲水器也有個別偏好；添購設備後，仍要觀察實際使用。若飲水或排尿突然改變，應聯絡獸醫，避免單純歸因於天氣或容器。'], points: ['不確定就註明不確定', '觀察行為，不猜測飲水量', '有疑慮時帶紀錄就診'] },
+    ],
+    interaction: { type: 'resource-map', title: '換個位置，換一種選擇。', description: '切換兩種配置，看看水碗與通行路線的關係。這張平面圖是概念示意，不是房屋配置標準。', disclaimer: '配置模擬｜圖中位置與路線為教學示意，無法預測個別貓咪行為。' },
+    scenario: { title: '兩隻貓，一個總在等待的午後。', paragraphs: ['你注意到其中一隻貓常在另一隻離開客廳後，才走向水碗。先將這個觀察記下，檢查是否所有水碗都集中在相同通路。', '增加不同位置的選擇後，再觀察牠是否更自在。若同時有食慾、排尿或精神改變，請把環境調整與症狀的時間一起告訴獸醫。'] },
+    takeaways: ['把食物中的水分納入觀察背景。', '提供不同位置，而不是只在同一角落加碗。', '與牠自己的平常比較；變化交由獸醫評估。'],
+    cautions: ['不要為了量測而限制飲水。懷疑脫水或發現令人擔憂的症狀時，請及時諮詢獸醫。'],
+    sources: [sources.water, sources.environment, sources.nutrition, sources.thirst], relatedArticles: ['multi-cat-water-resources', 'observe-drinking-habits', 'dry-and-wet-food', 'arrange-cat-water-stations'], nextTopic: 'environment',
+  },
+  environment: {
+    id: 'environment', navTitle: '行為與環境', title: '好的空間，\n讓每一隻貓有選擇。', englishTitle: 'Room to be themselves.', eyebrow: '02 / BEHAVIOUR & SPACE',
+    intro: '共享一個家，不代表必須共享每一個角落。從通路、休息處與資源分布，重新理解貓咪眼中的生活空間。', href: 'environment.html', updatedAt: '2026-11-12',
+    image: { src: 'assets/images/cat-resting.jpg', alt: '虎斑貓安穩地坐在柔軟沙發上' },
+    sections: [
+      { id: 'quiet-signals', kicker: 'THE QUIET SIGNALS', title: '沒有打架，也值得留意。', paragraphs: ['多貓之間的資源競爭不一定表現為衝突。錯開使用時間、被注視後退讓，或總是繞路，都可以是值得記下的互動。不要只用「牠們沒有吵架」概括相處情況。', '把看見的動作與發生位置寫下來，避免直接替牠貼上膽小或霸道的標籤。這些描述有助於之後與獸醫或行為專業人員溝通。'], points: ['觀察等待、繞路與退讓', '記位置，也記發生時間', '描述行為，不急著解釋動機'] },
+      { id: 'separate-resources', kicker: 'MORE THAN ONE WAY', title: '讓資源有不同入口。', paragraphs: ['環境指引列出的重要資源包含進食、飲水、如廁、抓磨、遊戲與休息。分散安排，能提供選擇，減少所有活動都必須在同一處靠近其他貓的情況。', '在簡單的家庭草圖上標記這些位置，再看哪些地方共用狹窄入口。這是整理觀察的方式，並不是以平面圖就能診斷壓力。'], points: ['食物、飲水與如廁區分開', '檢查共用動線是否受阻', '為不同社交群體保留選擇'] },
+      { id: 'safe-space', kicker: 'A PLACE TO RETREAT', title: '能休息，也能從容離開。', paragraphs: ['指引將安全躲藏與休息空間視為環境需求的一部分。多貓家庭的安全處應避免容易被另一隻貓封住出入口；高處與躲藏處也要考慮個別活動能力。', '不是每隻貓都能輕鬆跳上相同高度。安排前先看牠的動作與使用習慣，若突然不願跳躍或活動改變，應向獸醫確認。'], points: ['保留退開與離開的路線', '高度符合個別可近性', '生活變化與健康觀察一起看'] },
+    ],
+    interaction: { type: 'space-explorer', title: '走進貓咪眼中的家。', description: '點選空間中的觀察點，看看休息、飲水與通路如何影響選擇。鍵盤也能逐一探索。', disclaimer: '空間示意｜這是觀察提示，並非個別家庭的行為診斷或固定配置處方。' },
+    scenario: { title: '牠不再坐窗邊，可能值得多看一眼。', paragraphs: ['窗台下多了一個收納箱，而通向窗邊的路恰好靠近另一隻貓的休息點。先記錄路徑變化、誰在附近，以及牠何時會退開。', '調整障礙物後繼續觀察，不強迫牠靠近。若活動能力或精神也改變，環境因素與健康因素都應交由專業人員評估。'] },
+    takeaways: ['安靜的等待，也是有用的觀察。', '分散重要資源，提供各自選擇。', '安全空間應容易到達，也容易離開。'], cautions: ['持續衝突、躲藏、食慾或排尿改變時，請諮詢獸醫，必要時尋求行為專業協助。'],
+    sources: [sources.environment, sources.health], relatedArticles: ['reduce-resource-competition', 'multi-cat-water-resources'], nextTopic: 'technology',
+  },
+  technology: {
+    id: 'technology', navTitle: 'AI 智慧科技', title: '從看見一隻貓，\n到理解一段日常。', englishTitle: 'From pixels to patterns.', eyebrow: '03 / INSIDE MEOWCARE',
+    intro: '偵測、身分、區域與時間，是不同的問題。沿著 MeowCare 的專題架構，拆解一筆候選飲水事件如何形成，也看見它的限制。', href: 'technology.html', updatedAt: '2026-11-12',
+    image: { src: 'assets/images/cat-portrait.jpg', alt: '黑白貓的正面臉部，供技術概念示意' },
+    sections: [
+      { id: 'detection', kicker: '01 / LOCATE', title: 'YOLOv8n：先回答「貓在哪裡」。', paragraphs: ['YOLOv8 是 Ultralytics 的視覺模型系列，n 為其中的 nano 版本。專題架構使用 YOLOv8n 偵測畫面中的貓，取得位置資訊；物件偵測本身不會告訴我們是家中的哪一隻貓。', '偵測框也不代表飲水。貓可能只是走過或停留，接下來仍需身分與區域／時間條件。本站沒有載入模型，畫面中的框線是示意，不是即時推論。'], points: ['輸入：影像畫面', '輸出概念：貓的位置', '不能直接推論身分或飲水量'] },
+      { id: 'identity', kicker: '02 / IDENTIFY', title: 'PetFace：把觀察連回個體。', paragraphs: ['PetFace 是動物臉部個體辨識的資料集與研究基準，探討再辨識及未見個體的驗證。專題以 PetFace 相關辨識技術作為身分辨識環節；不是只要偵測到貓，就自動知道牠的名字。', '側臉、遮擋或陌生個體都需要保留不確定性，不能硬指派給既有貓咪。本站僅解說流程；原專案資料、程式與預訓練模型限非商業研究用途，並未隨網站分發。'], points: ['辨識與偵測是不同任務', '未知身分應保留待覆核', '不編造本專題準確率'] },
+      { id: 'roi-events', kicker: '03 / CONNECT', title: 'ROI 與時間：形成候選事件。', paragraphs: ['使用者提供的專題設計，是先手動設定飲水區域 ROI，再結合持續時間條件判定事件。這裡以「身分已確認、位於區域內、持續時間達標」示範判斷邏輯；實際實作的幾何判定與門檻仍需專題資料確認。', '靠近水碗與停留可能被誤判，因此候選事件應保留覆核空間。事件次數與持續秒數都不等於喝下的毫升數，也不能用來診斷疾病。'], points: ['ROI 由人設定，不是自動理解水碗', '秒數門檻是判斷條件，不是醫療標準', '候選事件需要回看與覆核'] },
+      { id: 'history', kicker: '04 / REFLECT', title: '歷史紀錄，讓變化能被討論。', paragraphs: ['將候選事件依個體與時間整理，才能觀察某隻貓在紀錄中的變化。畫面遮擋、身份未明與攝影機未涵蓋的飲水，都可能讓事件紀錄不完整。', '本站展示的前端流程與模擬趨勢，是這次可操作的專題敘事成果。未提供模型檔、實測報告或真實監測資料，因此不宣稱速度、準確率或照護成效。'], points: ['保留時間與不確定性', '分清事件紀錄與健康判斷', '由資料回到實際照護情境'] },
+    ],
+    interaction: { type: 'ai-pipeline', title: '一筆事件，如何成立？', description: '依序探索四個步驟，再調整 ROI、身分與持續時間，觀察規則示範如何改變。', disclaimer: '前端規則模擬｜無攝影機、無模型推論。所有秒數僅供教學，非專題實測設定或獸醫建議。' },
+    scenario: { title: '牠在水碗旁停了下來，但真的喝水了嗎？', paragraphs: ['一段畫面可能符合 ROI 與停留條件，但貓也可能只是在聞水、休息或看向旁邊。這時事件只能作為候選紀錄，不能當成確定飲水。', '如果身分未確認，就應保留為待覆核；即使得到候選紀錄，仍需要人回看影像並搭配日常觀察。'] },
+    takeaways: ['偵測位置、辨識個體與判定事件分開處理。', '手動 ROI 加時間條件，仍有誤判與漏記。', '趨勢提供討論線索，不能等同飲水量或診斷。'], cautions: ['本站不提供上傳、攝影機或真實辨識服務；不應以此展示替代獸醫評估。'],
+    sources: [sources.yolo, sources.petface, sources.petcode], relatedArticles: ['observe-drinking-habits', 'daily-health-records'], nextTopic: 'health',
+  },
+  health: {
+    id: 'health', navTitle: '健康管理', title: '把零散的觀察，\n變成有脈絡的關心。', englishTitle: 'Notice. Record. Understand.', eyebrow: '04 / HEALTH & OBSERVATION',
+    intro: '紀錄的價值，是幫助你說清楚「牠和平常哪裡不同」。把趨勢、生活變動與就醫準備放在一起，讓數字回到照護。', href: 'health.html', updatedAt: '2026-11-12',
+    image: { src: 'assets/images/cat-sunlight.jpg', alt: '橘色長毛貓在室內抬頭注視' },
+    sections: [
+      { id: 'baseline', kicker: 'KNOW THEIR EVERYDAY', title: '先認識平常，再談異常。', paragraphs: ['食慾、活動、理毛、飲水與排泄都值得持續觀察。用每隻貓自己的日常作為比較背景，會比把不同個體排成高低分更容易溝通。', '筆記不用複雜：日期、貓名、觀察到的變化與同時發生的生活事件即可。多貓共用資源時，無法確定是哪隻貓就明確註記。'], points: ['分別記錄個體', '描述事實而非自行診斷', '不確定資訊保留原樣'] },
+      { id: 'trends', kicker: 'READ WITH CONTEXT', title: '線條有變化，先問紀錄了什麼。', paragraphs: ['候選飲水事件的次數不是飲水量。攝影機視野、辨識失敗與其他水源，都可能讓記錄變多或變少；讀趨勢前先確認紀錄方式是否一致。', '圖表用來練習比較同一個體在不同日期的紀錄，不提供正常值、警戒線或疾病預測。若真實貓咪的飲水、排尿明顯改變，請直接與獸醫討論。'], points: ['分清事件數、秒數與毫升', '記下換食、環境與紀錄方式變動', '沒有事件不等於沒有喝水'] },
+      { id: 'vet-preparation', kicker: 'MAKE THE CONVERSATION CLEAR', title: '就醫前，準備一段清楚的故事。', paragraphs: ['整理變化何時開始、是否持續、食物與用藥有哪些改動，以及食慾、排尿與精神的情況。既有照片或影片可以輔助描述，但不用為了拍攝而打擾不舒服的貓。', '若有呼吸困難、無法排尿或其他明顯不適，應立即尋求獸醫協助。不要為了蒐集完整資料而等待，也不要自行限制飲水或給藥。'], points: ['時間線比猜測病名更有用', '帶現有紀錄，不延誤就醫', '由獸醫決定是否需進一步檢查'] },
+    ],
+    interaction: { type: 'trend-chart', title: '同一張圖，不同的觀察角度。', description: '切換示範貓咪與觀察區間，查看每日候選飲水事件紀錄。展開資料表，可逐日閱讀相同數據。', disclaimer: '完全模擬資料｜貓名、日期與數字皆為教學編排，不代表真實監測、正常值或健康評分。' },
+    scenario: { title: '帶著變化的時間線，而不是一個猜測。', paragraphs: ['假設你發現真實貓咪比平時更常喝水，可以先整理開始時間、最近換食與排尿的變化，再聯絡獸醫。不要用本站模擬圖表來套用牠的健康狀況。', '讓紀錄幫助溝通，而不是讓紀錄成為等待的理由。下方清單只協助整理要帶的資訊，不提供自動診斷。'] },
+    takeaways: ['以個體日常建立觀察脈絡。', '趨勢需要資料來源與生活背景。', '症狀令人擔憂時，及時找獸醫。'], cautions: ['無法排尿或呼吸困難時請立即就醫。本站不是診斷工具，也沒有健康風險評分。'],
+    sources: [sources.health, sources.thirst], relatedArticles: ['daily-health-records', 'changes-in-drinking'], nextTopic: 'water',
+  },
+};

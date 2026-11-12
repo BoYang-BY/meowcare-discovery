@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" fill="none">
+  <title>MeowCare Lab. 原創貓咪研究員</title>
+  <desc>奶油色小貓穿著粉藍實驗袍，抱著一個裝有愛心的觀察瓶。</desc>
+  <g stroke="#315A62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="269" cy="468" rx="139" ry="19" fill="#315A62" opacity=".12" stroke="none"/>
+    <path d="M361 379c54 18 89-13 83-45-4-24-32-20-29 0 2 14-18 20-37 9" fill="#FFF9ED"/>
+    <path d="M164 295c-22 45-34 114-19 143 20 38 207 38 224-2 12-32-3-98-22-140" fill="#CDECF0"/>
+    <path d="m195 299 60 42 61-42-12 54-49-12-46 13z" fill="#FFF9ED"/>
+    <path d="M255 341v111"/>
+    <circle cx="269" cy="378" r="3" fill="#315A62"/><circle cx="269" cy="410" r="3" fill="#315A62"/>
+    <path d="M172 416c-35 0-47 34-16 43 24 7 57 4 58-10 1-18-18-32-42-33zM324 417c-26 0-47 13-46 31 2 15 41 18 62 9 24-10 15-39-16-40z" fill="#FFF9ED"/>
+    <path d="m139 185-6-93c0-15 8-18 19-10l72 48c26-5 52-5 77 0l69-48c12-8 20-3 18 12l-9 91c33 78 0 144-118 145-119 0-155-65-122-145z" fill="#FFF9ED"/>
+    <path d="m151 110 6 61 39-30zM369 110l-44 31 39 30z" fill="#FFE2DF" stroke="none"/>
+    <path d="M239 131c-6 17-4 28 6 35M263 131c-4 13-2 21 3 28M287 133c-2 12 1 19 7 24" stroke="#E17770"/>
+    <ellipse cx="188" cy="238" rx="25" ry="14" fill="#FFE2DF" stroke="none"/><ellipse cx="331" cy="238" rx="25" ry="14" fill="#FFE2DF" stroke="none"/>
+    <path d="M191 209c6-12 20-12 27 0M302 209c7-12 21-12 28 0"/>
+    <path d="m249 232 12 10 12-10z" fill="#E17770" stroke="#E17770"/>
+    <path d="M261 242v10m0 0c-8 14-22 8-23-1m23 1c8 14 22 8 23-1" stroke-width="5"/>
+    <path d="m158 223-35-8m35 26-36 5m238-23 35-8m-35 26 36 5" stroke-width="4"/>
+    <path d="M167 338c-30 5-37 28-11 44 18 11 41 3 49-12" fill="#FFF9ED"/>
+    <path d="m297 338-2 27-25 50c-10 19 2 28 17 28h65c17 0 28-10 18-28l-25-50-2-27" fill="#FFF9ED"/>
+    <path d="M293 337h54"/>
+    <path d="m286 398-10 22c-4 9 1 15 12 15h63c11 0 17-5 12-15l-10-22z" fill="#E3DDFB" stroke="none"/>
+    <path d="M322 401c-18-20-35 8 0 23 34-15 17-43 0-23z" fill="#E17770" stroke="none"/>
+    <path d="M352 349c20-15 40 2 31 19-9 18-27 17-36 8" fill="#FFF9ED"/>
+  </g>
+  <g fill="#FFE6B0" stroke="#315A62" stroke-width="4" stroke-linejoin="round">
+    <path d="m91 151 7 18 19 6-19 7-7 19-7-19-18-7 18-6z"/>
+    <path d="m415 221 5 13 14 5-14 5-5 14-5-14-13-5 13-5z"/>
+  </g>
+</svg>

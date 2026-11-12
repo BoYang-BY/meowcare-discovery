@@ -1,0 +1,37 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.ssh/
+credentials.json
+secrets.json
+
+# Editor / agent local state
+.vscode/
+.idea/
+.agents/
+.codex/
+
+# Dependencies, caches and generated artifacts
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+playwright-report/
+test-results/
+*.log
+*.tmp
+*.bak
+*.zip
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

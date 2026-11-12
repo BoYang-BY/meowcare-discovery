@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#F4F3EA">
+  <meta name="description" content="MeowCare Discovery 獨立首頁視覺原型。探索貓咪觀察站、AI 示意裝置與四個照護展區。">
+  <title>MeowCare Discovery — Interactive Cat Care Lab｜視覺原型</title>
+  <link rel="stylesheet" href="assets/css/prototype.css">
+  <script type="module" src="assets/js/prototype.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要內容</a>
+  <header class="proto-header">
+    <div class="shell header-row">
+      <a class="proto-brand" href="#main" aria-label="MeowCare Discovery 原型首頁"><span class="brand-glyph" aria-hidden="true">m↗</span><span>MeowCare<small>DISCOVERY</small></span></a>
+      <nav aria-label="原型導覽"><a href="#station">互動觀察站</a><a href="#exhibits">探索展區</a><a class="formal-link" href="index.html">正式 V3 ↗</a></nav>
+      <span class="edition">VISUAL STUDY — 01</span>
+    </div>
+  </header>
+  <main id="main">
+    <section class="prototype-hero" aria-labelledby="prototype-title">
+      <div class="hero-wash wash-blue" aria-hidden="true"></div><div class="hero-wash wash-peach" aria-hidden="true"></div>
+      <div class="shell hero-heading">
+        <p class="overline heading-enter">MEOWCARE DISCOVERY / INTERACTIVE CAT CARE LAB</p>
+        <h1 id="prototype-title"><span class="headline-crop"><span class="headline-enter">日常很小，<em>發現很大。</em></span></span></h1>
+        <p class="hero-intro heading-enter">把一口水、一個眼神，放進更大的照護視野。</p>
+        <span class="hero-side-note" aria-hidden="true">CURIOUS BY NATURE.</span>
+      </div>
+
+      <div id="station" class="observation-station" data-mode="water" aria-label="互動貓咪觀察站">
+        <div class="station-word" aria-hidden="true">LOOK CLOSER</div>
+        <div class="station-rings" aria-hidden="true"><i class="outer-orbit"></i><i class="inner-orbit"></i><i class="orbit-axis"></i></div>
+        <div class="station-floor" aria-hidden="true"><span>MC—01</span><span>OBSERVATION FIELD</span></div>
+        <svg class="station-connections" viewBox="0 0 1200 520" preserveAspectRatio="none" aria-hidden="true">
+          <path class="connector connector-water" d="M215 280H350Q390 280 390 330V395H485"/>
+          <path class="connector connector-ai" d="M1000 130H850Q810 130 810 180H735"/>
+          <path class="connector connector-trend" d="M1025 395H900Q860 395 860 360H745"/>
+          <circle cx="485" cy="395" r="5"/><circle cx="735" cy="180" r="5"/><circle cx="745" cy="360" r="5"/>
+        </svg>
+
+        <!-- Existing licensed Unsplash photo; inline SVG clips its contour without editing the original asset. -->
+        <div class="cat-layer">
+          <svg class="station-cat" viewBox="300 65 930 1035" role="img" aria-labelledby="station-cat-title">
+            <title id="station-cat-title">黑白貓沿影像輪廓裁切，站在數位觀察裝置中央；這是視覺合成，不是監測畫面。</title>
+            <defs>
+              <path id="prototype-cat-contour" d="M440 1055C419 1041 398 1004 398 955L405 903C377 895 351 881 330 875C338 850 355 826 380 804C410 761 440 720 474 681C486 635 503 600 525 565C520 522 528 482 539 455L554 360C563 318 546 280 540 244L528 123C525 104 530 94 536 94C574 106 621 161 666 222C728 239 773 237 825 241C874 243 917 238 958 240C1003 187 1048 137 1067 120C1075 113 1080 117 1082 124C1090 151 1070 221 1058 256L1020 351C1015 390 1026 424 1030 449C1034 478 1026 510 1023 537C1020 561 1020 585 1018 601C1018 627 1026 650 1033 670C1047 700 1044 741 1054 771C1102 765 1121 770 1139 790C1181 808 1176 837 1171 885C1163 953 1140 991 1108 1009C1075 1024 1033 1030 1005 1010C973 989 970 966 973 924L983 879C856 906 698 919 616 897L613 951C605 1019 562 1079 503 1074C478 1077 457 1070 440 1055Z"/>
+              <clipPath id="prototype-cat-clip"><use href="#prototype-cat-contour"/></clipPath>
+            </defs>
+            <image href="assets/images/cat-portrait.jpg" width="1600" height="1101" clip-path="url(#prototype-cat-clip)"/>
+          </svg>
+        </div>
+
+        <div class="water-device" aria-hidden="true">
+          <span class="water-ripple ripple-one"></span><span class="water-ripple ripple-two"></span>
+          <svg viewBox="0 0 220 125"><path d="M18 46c4 48 28 66 92 66s87-19 92-66" fill="var(--device-ceramic)" stroke="var(--ink)" stroke-width="2"/><ellipse cx="110" cy="45" rx="93" ry="29" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/><ellipse cx="110" cy="45" rx="75" ry="19" fill="var(--blue)"/><path d="M64 43c20-10 42 9 67 0" fill="none" stroke="var(--ink)" stroke-width="2"/></svg>
+          <span class="device-caption">WATER / 觀察區域</span>
+        </div>
+        <div class="ai-device" aria-hidden="true">
+          <span class="ai-bracket top-left"></span><span class="ai-bracket top-right"></span><span class="ai-bracket bottom-left"></span><span class="ai-bracket bottom-right"></span>
+          <div class="scan-area"><div class="scan-sweep"></div></div><i class="face-point face-left"></i><i class="face-point face-right"></i><i class="face-point face-nose"></i>
+          <span class="ai-tag">CAT—01 / 示意辨識框</span>
+        </div>
+        <div class="trend-device" aria-hidden="true"><span>EVENTS / 示範趨勢</span><svg viewBox="0 0 240 90"><path d="M5 75H235M5 45H235M5 15H235" class="mini-grid"/><path id="scene-trend-line" d="M8 65 45 45 82 53 120 25 158 37 196 12 232 21" class="mini-line"/><circle cx="232" cy="21" r="5"/></svg></div>
+
+        <div class="observation-controls" role="group" aria-label="選擇觀察站模式">
+          <button class="observation-point point-water" type="button" data-observation="water" aria-pressed="true" aria-controls="station-readout"><span class="point-node" aria-hidden="true">01</span><span>飲水觀察<small>WATER BEHAVIOUR</small></span><span class="point-arrow" aria-hidden="true">↗</span></button>
+          <button class="observation-point point-ai" type="button" data-observation="ai" aria-pressed="false" aria-controls="station-readout"><span class="point-node" aria-hidden="true">02</span><span>AI 辨識<small>THROUGH AI'S EYES</small></span><span class="point-arrow" aria-hidden="true">↗</span></button>
+          <button class="observation-point point-trend" type="button" data-observation="trend" aria-pressed="false" aria-controls="station-readout"><span class="point-node" aria-hidden="true">03</span><span>健康趨勢<small>PATTERNS OVER TIME</small></span><span class="point-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <div class="station-bottom"><span><i aria-hidden="true"></i> 選擇觀察點，改變你的視角</span><span>SCENE / FRONT-END SIMULATION</span></div>
+      </div>
+    </section>
+
+    <section id="station-readout" class="readout-section" aria-labelledby="readout-title">
+      <div class="shell readout-inner">
+        <div class="readout-heading" aria-live="polite" aria-atomic="true"><p id="readout-index" class="overline">01 / WATER BEHAVIOUR</p><h2 id="readout-title">靠近水碗，故事才剛開始。</h2><p id="readout-description">把飲水位置、食物與個別習慣放在一起看。場景中的水波只示意觀察焦點，不表示貓咪真的正在喝水。</p></div>
+        <div id="readout-extra" class="readout-extra"></div>
+        <div class="readout-actions"><a id="readout-link" class="text-link" href="water.html">走進「飲水的秘密」 ↗</a><p>所有框線、事件與趨勢皆為示意。沒有執行模型、存取攝影機或判斷健康狀態。</p></div>
+      </div>
+    </section>
+
+    <section id="exhibits" class="exhibits-section shell" aria-labelledby="exhibits-title">
+      <div class="exhibits-heading" data-enter><p class="overline">CHOOSE YOUR NEXT DISCOVERY</p><h2 id="exhibits-title">好奇心帶路。<br><span>每一區，都是新視角。</span></h2><p>從一口水走到一段紀錄，<br>沿著線索，探索貓咪的世界。</p></div>
+      <div class="exhibition-floor">
+        <a class="exhibit-door door-water" href="water.html" data-enter><span class="door-overline">EXHIBIT 01 / WATER</span><span class="door-number" aria-hidden="true">01</span><h3>飲水的秘密</h3><p>從水碗位置，讀懂日常習慣。</p><div class="door-art water-art" aria-hidden="true"><i></i><i></i><i></i></div><span class="door-arrow" aria-hidden="true">↗</span><span class="door-hint">前往現有展區</span></a>
+        <a class="exhibit-door door-space" href="environment.html" data-enter><span class="door-overline">EXHIBIT 02 / SPACE</span><span class="door-number" aria-hidden="true">02</span><h3>貓咪的世界</h3><p>給每一隻貓，自在的選擇。</p><div class="door-art space-art" aria-hidden="true"><i></i><i></i><i></i></div><span class="door-arrow" aria-hidden="true">↗</span><span class="door-hint">前往現有展區</span></a>
+        <a class="exhibit-door door-ai" href="technology.html" data-enter><span class="door-overline">EXHIBIT 03 / INTELLIGENCE</span><span class="door-number" aria-hidden="true">03</span><h3>AI 的眼睛</h3><p>從像素、身分，到一筆候選事件。</p><div class="door-art ai-art" aria-hidden="true"><i></i><i></i><i></i><span>LOCATE<br>IDENTIFY<br>CONNECT</span></div><span class="door-arrow" aria-hidden="true">↗</span><span class="door-hint">前往現有展區</span></a>
+        <a class="exhibit-door door-health" href="health.html" data-enter><span class="door-overline">EXHIBIT 04 / PATTERNS</span><span class="door-number" aria-hidden="true">04</span><h3>健康的線索</h3><p>讓零散的觀察，變成有脈絡的關心。</p><div class="door-art health-art" aria-hidden="true"><svg viewBox="0 0 260 180"><path d="M0 150 42 105 84 130 126 60 168 80 210 28 260 0"/><circle cx="210" cy="28" r="9"/></svg></div><span class="door-arrow" aria-hidden="true">↗</span><span class="door-hint">前往現有展區</span></a>
+      </div>
+    </section>
+
+    <section class="prototype-end shell" data-enter><p class="overline">A DIFFERENT WAY TO LOOK. A BETTER WAY TO CARE.</p><h2>探索不必很遠。<br>從多看牠一眼開始。</h2><a class="round-cta" href="#station" aria-label="回到互動觀察站">再換個視角 <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="proto-footer shell"><div><strong>MeowCare Discovery</strong><p>首頁視覺原型 · 尚未套用正式網站</p></div><a href="index.html">回到正式 V3 網站 ↗</a><p class="prototype-notice">原型僅供設計與互動展示，不取代獸醫診療。影像沿用專案已授權的本機素材；圖形與裝置為原創 SVG／CSS。</p></footer>
+  <noscript><p class="shell">請啟用 JavaScript 操作三種觀察模式。四個展區連結與首頁內容仍可閱讀。</p></noscript>
+</body>
+</html>
